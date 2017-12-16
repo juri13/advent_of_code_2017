@@ -9,9 +9,9 @@ def solution(programs, dance_moves)
         size = $1.to_i
 
         end_sub_array = programs.last(size)
-        front_subarray = programs[0...(n - size)]
+        front_sub_array = programs[0...(n - size)]
 
-        programs = end_sub_array + front_subarray
+        programs = end_sub_array + front_sub_array
       when /x(\d+)\/(\d+)/
         program_1_index = $1.to_i
         program_2_index = $2.to_i
